@@ -11,7 +11,7 @@ public class Delivery {
 
     @Id
     @GeneratedValue
-    @Column(name="delivery id")
+    @Column(name="delivery_id")
     private Long id;
 
     @OneToOne(mappedBy="delivery")
