@@ -26,11 +26,13 @@ public class OrderRepository {
     }
 
     /**
+     * JPQL로 처리
      * 실무에선 이렇게 안 씀
      * 하나하나 다 일일이 짜는 느낌
      */
     public List<Order> findAllByString(OrderSearch orderSearch) {
 
+        // language=JPQL
         String jpql = "select o from Order o join o.member m";
         boolean isFirstCondition = true;
 
